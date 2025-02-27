@@ -51,7 +51,7 @@ jobs:
         with:
           charts_dir: .
         env:
-          CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CR_TOKEN: ${{ secrets.PACKAGE_SECRET }}
           CR_OWNER: ${{ github.repository_owner }}
           CR_REPO: ${{ github.event.repository.name }}
           CR_FORCE: "true"
