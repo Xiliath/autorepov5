@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: { { include "autoappv5.cronjob.fullname" . }-private-config }
+data:
+  setting1: "value1 for autoappv5.CronJob"

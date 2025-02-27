@@ -1,0 +1,6 @@
+apiVersion: v2
+name: autoappv5.cronjob
+description: Helm chart for autoappv5.CronJob
+type: application
+version: 0.0.1
+appVersion: 0.0.1

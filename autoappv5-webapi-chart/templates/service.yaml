@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: { { include "autoappv5.webapi.fullname" . }-svc }
+spec:
+  type: ClusterIP
+  selector:
+    app: { { include "autoappv5.webapi.name" . } }
+  ports:
+    - port: 80
+      targetPort: 80

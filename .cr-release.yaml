@@ -1,0 +1,4 @@
+charts:
+  - autoappv5-umbrella-chart
+  - autoappv5-webapi-chart
+  - autoappv5-cronjob-chart
