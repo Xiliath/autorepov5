@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: { { include "autoappv5.webapi.fullname" . } }
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: { { include "autoappv5.webapi.name" . } }
+  template:
+    metadata:
+      labels:
+        app: { { include "autoappv5.webapi.name" . } }
+    spec:
+      containers:
+        - name: autoappv5.webapi
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 80

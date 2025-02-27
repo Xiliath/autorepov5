@@ -1,0 +1,5 @@
+schedule: "0 0 * * *"
+image:
+  repository: ghcr.io/yourrepo/autoappv5.cronjob
+  tag: latest
+  pullPolicy: IfNotPresent

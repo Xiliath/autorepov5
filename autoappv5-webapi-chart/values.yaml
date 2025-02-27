@@ -1,0 +1,4 @@
+image:
+  repository: ghcr.io/yourrepo/autoappv5.webapi
+  tag: latest
+  pullPolicy: IfNotPresent

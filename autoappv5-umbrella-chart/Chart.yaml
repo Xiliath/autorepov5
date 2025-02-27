@@ -1,0 +1,13 @@
+apiVersion: v2
+name: autoappv5
+description: Umbrella chart for autoappv5 including Web API and CronJob
+type: application
+version: 0.0.1
+appVersion: 0.0.1
+dependencies:
+  - name: autoappv5.webapi
+    version: 0.0.1
+    repository: file://../autoappv5-webapi-chart
+  - name: autoappv5.cronjob
+    version: 0.0.1
+    repository: file://../autoappv5-cronjob-chart
